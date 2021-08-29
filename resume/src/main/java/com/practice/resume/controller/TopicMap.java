@@ -25,11 +25,11 @@ public class TopicMap {
 	@Autowired
 	private TopicService TopicService;
 	
-//	@RequestMapping("/")
-//	public void init()
-//	{
-//		System.out.println("welcome to topics list1");
-//	}
+	@RequestMapping("/")
+	public void init()
+	{
+		System.out.println("welcome to topics list1");
+	}
 	
 	@GetMapping("/getTopic/{id}")
 	@ApiOperation(value = "Find topic by id",
